@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ✅ Titre juste au-dessus du CardView -->
+    <TextView
+        android:id="@+id/titreStatistique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistique"
+        android:textColor="#FFA500"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardGraphique"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- ✅ CardView avec ID pour positionnement -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardGraphique"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="80dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnRetour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- ✅ Bouton retour noir en bas -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Retour"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:background="@drawable/btn_oval_black"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

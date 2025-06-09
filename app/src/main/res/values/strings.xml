@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">etudiant</string>
+    <string name="title_activity_update_student">UpdateStudentActivity</string>
+    <string name="add_button_desc">ajouter un élément</string>
+</resources>

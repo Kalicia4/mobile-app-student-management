@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateStudentActivity">
+
+    <TextView
+        android:id="@+id/updateStudentHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Modifier étudiant."
+        android:textColor="@color/orange"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/updateStudentHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/baseline_done_24" />
+
+    <EditText
+        android:id="@+id/updateEditTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Nom"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateStudentHeading"
+        android:background="@drawable/orange_boarder"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"/>
+
+    <EditText
+        android:id="@+id/updateEditTextPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Prénom"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateEditTextNom"
+        android:background="@drawable/orange_boarder"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"/>
+
+    <EditText
+        android:id="@+id/updateEditTextMoyenne"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Moyenne"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateEditTextPrenom"
+        android:background="@drawable/orange_boarder"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"/>
+
+</RelativeLayout>
